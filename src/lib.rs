@@ -1,8 +1,7 @@
-use crossbeam_channel::{Receiver, unbounded};
+use crossbeam_channel::{unbounded, Receiver};
 pub use simple_signal::Signal;
 
-pub fn signal(signals: &[Signal]) -> Receiver<()>
-{
+pub fn signal(signals: &[Signal]) -> Receiver<()> {
     let (sender, receiver) = unbounded();
     simple_signal::set_handler(signals, {
         move |_| {
@@ -13,11 +12,18 @@ pub fn signal(signals: &[Signal]) -> Receiver<()>
     receiver
 }
 
+pub fn hang_up() -> Receiver<()> {
+    signal(&[Signal::Hup])
+}
+
 pub fn interruption() -> Receiver<()> {
     signal(&[Signal::Int])
 }
 
-pub fn termination() -> Receiver<()>
-{
+pub fn termination() -> Receiver<()> {
+    signal(&[Signal::Term])
+}
+
+pub fn interruption_or_termination() -> Receiver<()> {
     signal(&[Signal::Int, Signal::Term])
 }
