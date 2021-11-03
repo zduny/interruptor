@@ -1,12 +1,12 @@
 [package]
-name = "terminator"
+name = "interruptor"
 version = "0.1.0"
 authors = ["zduny <dzduniak@gmail.com>"]
 edition = "2021"
 description = "Collection of functions generating Unix process signal receivers for use in the Crossbeam Channel select! macro."
 license = "Apache-2.0"
-repository = "https://github.com/zduny/terminator"
-documentation = "https://docs.rs/terminator/"
+repository = "https://github.com/zduny/interruptor"
+documentation = "https://docs.rs/interruptor/"
 keywords = ["crossbeam", "channel", "signal", "interruption", "termination"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

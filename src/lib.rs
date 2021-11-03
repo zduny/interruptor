@@ -7,7 +7,7 @@
 //! use std::time::Duration;
 //! 
 //! use crossbeam_channel::{select, tick};
-//! use terminator::interruption_or_termination;
+//! use interruptor::interruption_or_termination;
 //! 
 //! fn main() {
 //!     let tick = tick(Duration::from_secs(1));
