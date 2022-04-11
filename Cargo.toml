@@ -1,6 +1,6 @@
 [package]
 name = "interruptor"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["zduny <dzduniak@gmail.com>"]
 edition = "2021"
 description = "Collection of functions generating Unix process signal receivers for use in the Crossbeam Channel select! macro."
