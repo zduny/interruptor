@@ -12,5 +12,5 @@ fn main() {
             recv(tick) -> _ => println!("Running!"),
             recv(stop) -> _ => break,
         }
-    };
+    }
 }
