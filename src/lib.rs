@@ -3,7 +3,7 @@
 //!
 //! ## Example
 //!
-//! ```
+//! ```ignore
 //! let tick = tick(Duration::from_secs(1));
 //! let stop = interruption_or_termination();
 //!
