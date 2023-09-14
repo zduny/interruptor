@@ -1,5 +1,9 @@
 # interruptor
 
+[![Test Status](https://github.com/zduny/interruptor/actions/workflows/rust.yml/badge.svg)](https://github.com/zduny/interruptor/actions)
+[![Crate](https://img.shields.io/crates/v/interruptor.svg)](https://crates.io/crates/interruptor)
+[![API](https://docs.rs/interruptor/badge.svg)](https://docs.rs/interruptor)
+
 Collection of functions generating Unix process signal receivers 
 for use in the [Crossbeam Channel](https://github.com/crossbeam-rs/crossbeam/tree/master/crossbeam-channel) `select!` macro.
 
